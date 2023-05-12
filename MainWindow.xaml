@@ -1,0 +1,28 @@
+﻿<Window x:Class="Prog124_Midterm_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog124_Midterm_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="450">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        <Button x:Name="btnMainAddNewProduct" Content="Add New Product" HorizontalAlignment="Left" Margin="10,183,0,0" VerticalAlignment="Top" Height="44" Width="202" Click="Button_Click"/>
+        <RichTextBox Height="NaN" Margin="10,10,0,656" Width="430" HorizontalAlignment="Left">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="runDisplayMainText" Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ComboBox x:Name="cmbMainMembershipInformation" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Width="430" Height="45"/>
+        <Button x:Name="btnMainMembershipInformation" Content="Member Information" HorizontalAlignment="Left" Margin="238,183,0,0" VerticalAlignment="Top" Height="44" Width="202" Click="Button_Click_1"/>
+        <Label Content="Products" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Width="106" HorizontalContentAlignment="Center" FontSize="22"/>
+        <Button x:Name="btnMainBuyProduct" Content="Buy Product" HorizontalAlignment="Left" Margin="10,545,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
+        <Button x:Name="btnMainPurchaseWithPoints" Content="Purchase with points" HorizontalAlignment="Left" Margin="10,650,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
+        <Label x:Name="lblUserPoints" Content="User points go here" HorizontalAlignment="Left" Margin="12,519,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="lbMainProducts" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="12,271,0,270" Width="428" HorizontalAlignment="Left"/>
+        <ListBox x:Name="lbMainReceipt" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="95,545,0,54" Width="345" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Window>
