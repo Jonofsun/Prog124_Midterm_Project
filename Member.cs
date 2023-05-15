@@ -29,8 +29,9 @@ namespace Prog124_Midterm_Project
 
             PointAmount = 0;
             MemberSince = DateTime.Now;
-            _previousTransactions = new ObservableCollection<Product>(); // This could be an issue Noting this down
+            _previousTransactions = new ObservableCollection<Product>(); // This could be an issue Noteing this down
         }
+
         public abstract void DeductPoints(Product product);
 
         public abstract void AddPoints(Product product);

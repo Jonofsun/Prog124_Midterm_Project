@@ -20,10 +20,11 @@
             <RadioButton x:Name="rbRegularMember" Content="Regular Member" Canvas.Left="33" Canvas.Top="41" Height="29" Width="191" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" Foreground="White"/>
             <RadioButton x:Name="rbGoldMember" Content="Gold Member" Canvas.Left="33" Canvas.Top="75" Height="29" Width="192" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White"/>
         </Canvas>
-        <Button x:Name="btnMembershipAddMembers" Content="Add Members" HorizontalAlignment="Left" Margin="319,145,0,0" VerticalAlignment="Top" Height="100" Width="100" Grid.RowSpan="2"/>
-        <ListBox x:Name="lbMemberInformation" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="10,95,10,223" Width="NaN" Grid.Row="1"/>
+        <Button x:Name="btnMembershipAddMembers" Content="Add Members" HorizontalAlignment="Left" Margin="319,145,0,0" VerticalAlignment="Top" Height="100" Width="100" Grid.RowSpan="2" Click="btnMembershipAddMembers_Click"/>
+        <ListBox x:Name="lbMemberInformation" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="10,95,10,223" Width="NaN" Grid.Row="1" SelectionChanged="lbMemberInformation_SelectionChanged"/>
         <Label Content="Transaction History" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="215" FontSize="16" Foreground="White" Grid.Row="1"/>
         <ListBox x:Name="lbMembershipTransactionHistory" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,404,10,10"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="298,374,0,0" Grid.Row="1" VerticalAlignment="Top" Width="137" Click="Button_Click"/>
 
     </Grid>
 </Window>

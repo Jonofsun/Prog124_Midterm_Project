@@ -18,11 +18,12 @@
         <ComboBox x:Name="cmbMainMembershipInformation" HorizontalAlignment="Center" Margin="0,133,0,0" VerticalAlignment="Top" Width="430" Height="45"/>
         <Button x:Name="btnMainMembershipInformation" Content="Member Information" HorizontalAlignment="Left" Margin="238,183,0,0" VerticalAlignment="Top" Height="44" Width="202" Click="Button_Click_1"/>
         <Label Content="Products" HorizontalAlignment="Center" Margin="0,232,0,0" VerticalAlignment="Top" Width="106" HorizontalContentAlignment="Center" FontSize="22"/>
-        <Button x:Name="btnMainBuyProduct" Content="Buy Product" HorizontalAlignment="Left" Margin="10,545,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
-        <Button x:Name="btnMainPurchaseWithPoints" Content="Purchase with points" HorizontalAlignment="Left" Margin="10,650,0,0" VerticalAlignment="Top" Height="80" Width="80"/>
+        <Button x:Name="btnMainBuyProduct" Content="Buy Product" HorizontalAlignment="Left" Margin="10,545,0,0" VerticalAlignment="Top" Height="80" Width="80" Click="btnMainBuyProduct_Click"/>
+        <Button x:Name="btnMainPurchaseWithPoints" Content="Purchase with points" HorizontalAlignment="Left" Margin="10,650,0,0" VerticalAlignment="Top" Height="80" Width="80" Click="btnMainPurchaseWithPoints_Click"/>
         <Label x:Name="lblUserPoints" Content="User points go here" HorizontalAlignment="Left" Margin="12,519,0,0" VerticalAlignment="Top" Width="122"/>
         <ListBox x:Name="lbMainProducts" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="12,271,0,270" Width="428" HorizontalAlignment="Left"/>
         <ListBox x:Name="lbMainReceipt" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="95,545,0,54" Width="345" HorizontalAlignment="Left"/>
+        <Button x:Name="btnRefreash" Content="Refreash" HorizontalAlignment="Left" Margin="12,237,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.44,0.023" Width="99" Click="btnRefreash_Click"/>
 
     </Grid>
 </Window>
